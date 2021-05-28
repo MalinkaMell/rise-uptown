@@ -1,0 +1,71 @@
+.home-hero {
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	box-sizing: border-box;
+	position: relative;
+	height: 1024px;
+	max-height: 100vh;
+	width: 100%;
+	// z-index: -1;
+
+}
+.hero {
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	box-sizing: border-box;
+	position: relative;
+	height: 810px;
+	max-height: 100vh;
+	width: 100%;
+	
+}
+.hero-page {
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	box-sizing: border-box;
+	position: relative;
+	height: 650px;
+	max-height: 100vh;
+	width: 100%;
+	
+}
+.hero-single-blog {
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	box-sizing: border-box;
+	position: relative;
+	height: 650px;
+	max-height: 100vh;
+	width: 100%;
+	
+}
+
+.header{
+	@include padding-top(13rem);
+	color: $gold;
+	
+}

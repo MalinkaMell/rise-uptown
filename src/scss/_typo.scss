@@ -1,0 +1,196 @@
+.aauxProRegular {
+	font-family: $aaux;
+	font-style: normal;
+	font-weight: 500;
+}
+.aauxProBold {
+	font-family: $aaux;
+	font-style: normal;
+	font-weight: 900;
+}
+.aauxProRegularItalic {
+	font-family: $aaux;
+	font-style: italic;
+	font-weight: 500;
+}
+.aauxProBoldItalic {
+	font-family: $aaux;
+	font-style: italic;
+	font-weight: 900;
+}
+.palmCanyonDriveItalic {
+	font-family: $palm;
+	font-style: italic;
+	font-weight: normal;
+}
+
+h1,
+.h1 {
+	@extend .aauxProRegularItalic;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	@include font-size(2.25rem);
+	@include rfs(3.75rem, line-height);
+
+	&.hero-title-palm {
+		@extend .palmCanyonDriveItalic;
+		@include font-size(10.875rem);
+		line-height: 1;
+		transform: rotate(-3deg);
+		text-transform: none;
+		z-index: 1;
+		letter-spacing: 0 !important;
+	}
+	&.hero-title-aaux {
+		@extend .aauxProBold;
+		@include font-size(11.25rem);
+		@include rfs(6rem, line-height);
+		letter-spacing: 0.07em;
+		text-transform: uppercase;
+		z-index: 1;
+	}
+	&.hero-title-single {
+		@extend .aauxProBold;
+		@include font-size(6rem);
+		line-height: 2;
+		letter-spacing: 0.07em;
+		text-transform: uppercase;
+		z-index: 1;
+	}
+	&.header-title-aaux {
+		@extend .aauxProBold;
+		@include font-size(4rem);
+		@include rfs(6rem, line-height);
+		letter-spacing: 0.07em;
+		text-transform: uppercase;
+		z-index: 1;
+	}
+}
+h2,
+.h2 {
+	@extend .aauxProBold;
+	font-size: 0.937rem;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	@include font-size(1.125rem);
+	@include media-breakpoint-up(lg) {
+		@include font-size(1.5rem);
+	}
+	&.hero-subtitle {
+		position: relative;
+		z-index: 10;
+	}
+}
+h3,
+.h3 {
+	@extend .aauxProRegular;
+	@include font-size(1.5rem);
+	@include rfs(2.25rem, line-height);
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+h4,
+.h4 {
+	@extend .aauxProRegular;
+	@include font-size(1.125rem);
+	@include rfs(1.375rem, line-height);
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+h5,
+.h5 {
+	@extend .aauxProRegular;
+	@include font-size(0.937rem);
+	@include rfs(1.5rem, line-height);
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+h6,
+.h6 {
+	@extend .aauxProRegular;
+	@include font-size(0.687rem);
+	@include rfs(0.812rem, line-height);
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.display-rise {
+	@extend .palmCanyonDriveItalic;
+	transform: rotate(-3deg);
+	@include font-size(9rem);
+	line-height: 1;
+}
+.display {
+	@extend .palmCanyonDriveItalic;
+	transform: rotate(-3deg);
+	font-size: 6rem;
+	line-height: 1;
+	@include media-breakpoint-up(xl) {
+		@include font-size(9rem);
+		line-height: 1;
+	}
+}
+.bold-rise {
+	@extend .aauxProBold;
+	@include font-size(1.5rem);
+	@include rfs(3rem, line-height);
+	letter-spacing: 0.05em;
+}
+
+.foodBanner {
+	@extend .aauxProBold;
+	@include font-size(6rem);
+	@include rfs(7.312rem, line-height);
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+
+	@include media-breakpoint-up(lg) {
+		@include font-size(4.125rem);
+		line-height: 1;
+	}
+}
+.page-title {
+	@extend .aauxProBold;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	@include font-size(11.25rem);
+	line-height: 1;
+}
+.ada-link {
+	@extend .aauxProRegularItalic;
+	font-size: 0.937rem;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	position: relative;
+	@include font-size(1.125rem);
+	@include media-breakpoint-up(lg) {
+		@include font-size(1.5rem);
+	}
+}
+.plus {
+	@extend .aauxProRegular;
+	font-size: 2rem;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	position: relative;
+	@include font-size(1.125rem);
+	@include media-breakpoint-up(lg) {
+		@include font-size(1.5rem);
+	}
+}
+body {
+	@extend .aauxProRegular;
+	font-size: 1.125rem;
+	line-height: 2;
+	color: $darkTeal;
+	@include media-breakpoint-up(xl) {
+		font-size: 1.5rem;
+		line-height: 2;
+	}
+	&.italic {
+		@extend .aauxProRegularItalic;
+	}
+}

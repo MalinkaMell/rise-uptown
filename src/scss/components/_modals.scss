@@ -1,0 +1,32 @@
+#ADAInfo {
+	.modal-content {
+		background-color: $lightStone;
+		border: 1px solid $lightStone;
+		border-radius: 0;
+		outline: 0;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		color: $darkTeal;
+		.btn-close {
+			font-size: 1rem;
+			opacity: 1;
+			position: absolute;
+			top: 1rem;
+			right: 1rem;
+			z-index: 1;
+			filter: invert(43%) sepia(7%) saturate(862%) hue-rotate(91deg)
+				brightness(98%) contrast(95%);
+		}
+		.modal-title {
+			@extend .aauxProBoldItalic;
+			font-size: 0.937rem;
+			line-height: 1.5;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			@include font-size(1.125rem);
+			@include media-breakpoint-up(lg) {
+				@include font-size(1.5rem);
+			}
+		}
+	}
+}

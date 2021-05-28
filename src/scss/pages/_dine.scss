@@ -1,0 +1,49 @@
+.gold-sun-dine {
+	background-image: url('../images/dine/dine-sun-mobile.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	max-width: 65px;
+	max-height: 65px;
+	min-width: 65px;
+	min-height: 65px;
+	@include media-breakpoint-up(md) {
+		background-image: url('../images/dine/dine-sun-tablet.svg');
+		max-width: 210px;
+	max-height: 210px;
+	min-width: 210px;
+	min-height: 210px;
+	}
+	@include media-breakpoint-up(xl) {
+		background-image: url('../images/dine/dine-sun-desktop.svg');
+		max-width: 306px;
+	max-height: 306px;
+	min-width: 306px;
+	min-height: 306px;
+	}
+}
+
+.dine-waves {
+	background-image: url('../images/dine/dine-waves-mobile.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left center;
+	max-width: 56px;
+	max-height: 108px;
+	min-width: 56px;
+	min-height: 108px;
+	@include media-breakpoint-up(md) {
+		background-image: url('../images/dine/dine-waves-tablet.svg');
+		max-width: 48px;
+	max-height: 138px;
+	min-width: 48px;
+	min-height: 138px;
+	}
+	@include media-breakpoint-up(xl) {
+		background-image: url('../images/dine/dine-waves-desktop.svg');
+		max-width: 29px;
+	max-height: 422px;
+	min-width: 29px;
+	min-height: 422px;
+	}
+}

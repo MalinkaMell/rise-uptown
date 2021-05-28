@@ -1,0 +1,78 @@
+#contact-form {
+	padding-bottom: 72px;
+	height: 125vh;
+	@media (max-width: 320px) { 
+		height: 185vh;
+	 }
+	 @media (min-width: 400px)  and (max-width: 600px)  { 
+		height: 140vh;
+	 }
+	 @media (min-width: 321px) and (max-width: 374.9px) { 
+		height: 150vh;
+	  }
+
+    @include media-breakpoint-up(md){
+        min-height: 800px;
+		height: 90vh;
+	padding-top: 72px;
+
+    }
+    iframe{
+        height: 100%;
+        overflow: hidden;
+    }
+	label {
+		@extend .aauxProBold;
+		@include font-size(1.5rem);
+		@include rfs(1.812rem, line-height);
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: $light;
+	}
+	input,
+	textarea {
+		background: none;
+		border-top: 0;
+		border-left: 0;
+		border-right: 0;
+		border-bottom: 4px solid $lightStone;
+		border-radius: 0;
+		color: $gold;
+		outline: none;
+		box-shadow: none;
+        @extend .aauxProRegularItalic;
+        color: $darkTeal;
+		&:focus {
+			border-color: $gold;
+			+ label {
+				color: $gold;
+			}
+		}
+	}
+    input{
+        text-transform: uppercase;
+
+    }
+	textarea,
+	input[type='submit'] {
+		border-color: $gold;
+	}
+	input[type='submit'] {
+		justify-self: end;
+		align-self: flex-end;
+		background-image: url("data:image/svg+xml,%3Csvg width='30' height='15' viewBox='0 0 30 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.8008 15C22.8008 10.8583 26.0239 7.5 30.0008 7.5C26.0247 7.5 22.8008 4.14261 22.8008 0' stroke='%23AC7D2C' stroke-width='2' stroke-miterlimit='10'/%3E%3Cpath d='M30 7.5L0 7.5' stroke='%23AC7D2C' stroke-width='2' stroke-miterlimit='10'/%3E%3C/svg%3E%0A");
+		background-repeat: no-repeat;
+		min-width: 30px;
+		min-height: 15px;
+		@include media-breakpoint-up(md) {
+			background-image: url("data:image/svg+xml,%3Csvg width='50' height='24' viewBox='0 0 50 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M38 24C38 17.3732 43.3718 12 50 12C43.3732 12 38 6.62818 38 0' stroke='%23AC7D2C' stroke-width='3' stroke-miterlimit='10'/%3E%3Cpath d='M50 12L0 12' stroke='%23AC7D2C' stroke-width='3' stroke-miterlimit='10'/%3E%3C/svg%3E%0A");
+			min-width: 50px;
+			min-height: 24px;
+		}
+		@include media-breakpoint-up(xl) {
+			background-image: url("data:image/svg+xml,%3Csvg width='84' height='36' viewBox='0 0 84 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M66 36C66 26.0599 74.0577 18 84 18C74.0599 18 66 9.94227 66 0' stroke='%23AC7D2C' stroke-width='4' stroke-miterlimit='10'/%3E%3Cpath d='M84 18L0 18' stroke='%23AC7D2C' stroke-width='4' stroke-miterlimit='10'/%3E%3C/svg%3E%0A");
+			min-width: 84px;
+			min-height: 36px;
+		}
+	}
+}

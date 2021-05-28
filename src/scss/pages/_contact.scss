@@ -1,0 +1,57 @@
+.box {
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	border: 4px solid transparent;
+	border-radius: 0;
+    &.teal{
+        border-color: $darkTeal;
+    }
+    &.red{
+        border-color: $red;
+    }
+}
+
+.box:after {
+	content: '';
+	display: block;
+	padding-top: 100%;
+}
+
+.content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    overflow: hidden;
+}
+
+.content-button{
+    width: 50%;
+    height: auto;
+    text-align: center;
+    @extend .aauxProBold;
+    text-transform: uppercase;
+    @include font-size(1rem);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    &:hover{
+        background: darkmagenta;
+        
+    }
+}
+
+
+// #contact-form{
+//     height: 130vh;
+//     @include media-breakpoint-up(md){
+//         min-height: 800px;
+//     }
+//     iframe{
+//         height: 100%;
+//         overflow: hidden;
+//     }
+// }

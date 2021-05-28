@@ -1,0 +1,95 @@
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@include list-unstyled();
+	margin: 1rem;
+}
+
+.page-link {
+	padding: 0;
+	line-height: 1;
+	font-size: 2.125rem;
+	position: relative;
+	display: block;
+	color: $green;
+	text-decoration: none;
+	background-color: transparent;
+	margin: 0 10px;
+	padding: 0.5rem 1rem !important;
+	border: none !important;
+
+	@include transition($pagination-transition);
+
+	&:hover {
+		z-index: 2;
+		color: $gold;
+		text-decoration: none;
+		background-color: transparent;
+		border-color: transparent;
+	}
+
+	&:focus {
+		z-index: 3;
+		color: $lightStone;
+		background-color: $gold;
+		outline: none;
+		box-shadow: none;
+	}
+}
+
+.page-item {
+	padding: 0;
+	margin: 1rem 0;
+	&:not(:first-child) .page-link {
+		margin-left: 15px;
+		border-top-right-radius: 0 !important;
+		border-bottom-right-radius: 0 !important;
+	}
+	&:first-child .page-link {
+		border-top-left-radius: 0 !important;
+		border-bottom-left-radius: 0 !important;
+	}
+	&.active .page-link {
+		z-index: 3;
+		color: $lightStone;
+		background: transparent;
+		max-height: 50px;
+		background-color: $green;
+	}
+
+	&.disabled .page-link {
+		color: gray;
+		pointer-events: none;
+		background-color: $lightStone;
+		border-color: transparent;
+	}
+}
+
+//
+// Sizing
+//
+// @include pagination-size(
+// 	$pagination-padding-y,
+// 	$pagination-padding-x,
+// 	null,
+// 	$pagination-border-radius
+// );
+
+// .pagination-lg {
+// 	@include pagination-size(
+// 		$pagination-padding-y-lg,
+// 		$pagination-padding-x-lg,
+// 		$font-size-lg,
+// 		$border-radius-lg
+// 	);
+// }
+
+// .pagination-sm {
+// 	@include pagination-size(
+// 		$pagination-padding-y-sm,
+// 		$pagination-padding-x-sm,
+// 		$font-size-sm,
+// 		$border-radius-sm
+// 	);
+// }

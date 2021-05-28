@@ -1,0 +1,29 @@
+
+@import url("https://use.typekit.net/ogk8kvt.css");
+@import "variables";
+@import 'bootstrap/bootstrap.scss';
+@import 'mixins';
+@import "global";
+
+
+//custom
+@import 'fonts';
+@import 'components/topnav';
+@import 'components/footer';
+@import 'components/hero';
+@import 'typo';
+@import 'buttons';
+@import 'components/modals';
+@import 'components/pagination';
+@import 'components/contact-form';
+//helpers
+@import 'helpers/spasing';
+@import 'helpers/images';
+@import 'helpers/dividers';
+//pages
+@import 'pages/home';
+@import 'pages/discover';
+@import 'pages/contact';
+@import 'pages/stay';
+@import 'pages/dine';
+@import 'pages/page';

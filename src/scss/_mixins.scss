@@ -1,0 +1,32 @@
+//perfect center
+@mixin center($position, $alignement) {
+	@if $position == 'absolute' {
+		position: absolute;
+	} @else if $position == 'relative' {
+		position: relative;
+	}
+
+	@if $alignement == 'vertical' {
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	} @else if $alignement == 'horizontal' {
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		transform: translate(-50%);
+	} @else if $alignement == 'both' {
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+}
+
+@mixin prefix($a, $b) {
+	-moz-#{$a}: $b;
+	-webkit-#{$a}: $b;
+	#{$a}: $b;
+}

@@ -1,0 +1,46 @@
+{
+  "name": "rise_uptown",
+  "version": "1.0.0",
+  "description": "Rise Uptown",
+  "type": "module",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build --prod"
+  },
+  "author": "Monomyth Studio",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10",
+    "autoprefixer": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-srcset": "^3.0.0",
+    "gulp-webp": "^4.0.1",
+    "gulp-webp-html": "^1.0.2",
+    "gulp-webp-html-fix": "^1.0.3",
+    "imagemin": "^7.0.1",
+    "imagemin-webp": "^6.0.0",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^6.1.1",
+    "yargs": "^16.2.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.0-beta2",
+    "jquery": "^3.6.0",
+    "lozad": "^1.16.0",
+    "postcss": "^8.2.6"
+  }
+}

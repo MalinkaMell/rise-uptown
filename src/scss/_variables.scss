@@ -1,0 +1,26 @@
+//COLORS
+$gold: #ac7d2c;
+$red: #bb5245;
+$lightBlue: #adc7cf;
+$green: #5c7566;
+$darkTeal: #154754;
+$lightStone: #e6e6df;
+$accent: #18a0fb;
+$black: #000000;
+$white: #ffffff;
+
+$theme-colors: (
+	'primary': $gold,
+	'secondary': $accent,
+	'green': $green,
+	'red': $red,
+	'info': $lightBlue,
+	'light': $lightStone,
+	'dark': $darkTeal,
+	'white': $white,
+	'black': $black,
+);
+
+//FONTS
+$aaux: aaux-next, sans-serif;
+$palm: Palm Canyon Drive;

@@ -1,0 +1,2015 @@
+.btn-rise,
+.wp-block-button__link {
+	@extend .btn;
+	line-height: 1;
+	padding: 10px 0;
+	display: inline-block;
+	width: auto;
+	min-width: 142px;
+	color: inherit;
+	background: transparent;
+	vertical-align: middle;
+	position: relative;
+	border: 2px solid transparent;
+	border-radius: 0;
+	box-sizing: border-box;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	user-select: none;
+	outline: none;
+	font-size: 11px;
+	@extend .aauxProBold;
+	text-indent: 34px;
+	text-transform: uppercase;
+	@include media-breakpoint-up(md) {
+		text-indent: 48px;
+		font-size: 14px;
+		border: 3px solid transparent;
+		padding: 14px 0;
+		min-width: 175px;
+	}
+	@include media-breakpoint-up(xl) {
+		text-indent: 64px;
+		font-size: 18px;
+		border: 4px solid transparent;
+		padding: 19px 4.5rem;
+		min-width: 259px;
+	}
+	@include media-breakpoint-up(xxl) {
+		min-width: 310px;
+	}
+	&.inst {
+		&::before {
+			content: '';
+			mask: url('../images/buttons/inst-btn-pre-mobile.svg') center center
+				no-repeat;
+			-webkit-mask: url('../images/buttons/inst-btn-pre-mobile.svg') center
+				center no-repeat;
+			width: 34px;
+			height: 34px;
+			position: absolute;
+			top: -2px;
+			left: -2px;
+			@include media-breakpoint-up(md) {
+				mask: url('../images/buttons/inst-btn-pre-tablet.svg') center center
+					no-repeat;
+				-webkit-mask: url('../images/buttons/inst-btn-pre-tablet.svg') center
+					center no-repeat;
+				width: 48px;
+				height: 48px;
+				top: -3px;
+				left: -3px;
+			}
+			@include media-breakpoint-up(xl) {
+				mask: url('../images/buttons/inst-btn-pre.svg') center center no-repeat;
+				-webkit-mask: url('../images/buttons/inst-btn-pre.svg') center center
+					no-repeat;
+				width: 64px;
+				height: 64px;
+				top: -4px;
+				left: -4px;
+			}
+		}
+		&.pre-gold {
+			color: $gold;
+			border-color: $gold;
+			&::before {
+				background: $gold;
+			}
+			&:hover {
+				color: $lightStone;
+				background-image: linear-gradient(
+					to right,
+					$lightStone 0%,
+					$lightStone 34px,
+					$gold 34px,
+					$gold
+				);
+				@include media-breakpoint-up(md) {
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 48px,
+						$gold 48px,
+						$gold
+					);
+				}
+				background-image: linear-gradient(
+					to right,
+					$lightStone 0%,
+					$lightStone 34px,
+					$gold 34px,
+					$gold
+				);
+				@include media-breakpoint-up(xl) {
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 60px,
+						$gold 60px,
+						$gold
+					);
+				}
+			}
+		}
+		&.gold {
+			&:active,
+			&:focus {
+				&::before {
+					background: $green;
+				}
+				outline: none;
+				box-shadow: none;
+				color: $lightStone;
+				border-color: $green;
+				background-image: linear-gradient(
+					to right,
+					$lightStone 0%,
+					$lightStone 34px,
+					$green 34px,
+					$green
+				);
+				@include media-breakpoint-up(md) {
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 48px,
+						$green 48px,
+						$green
+					);
+				}
+				background-image: linear-gradient(
+					to right,
+					$lightStone 0%,
+					$lightStone 34px,
+					$green 34px,
+					$green
+				);
+				@include media-breakpoint-up(xl) {
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 60px,
+						$green 60px,
+						$green
+					);
+				}
+			}
+		}
+	}
+	&.rect {
+		&::before {
+			content: '';
+			mask: url('../images/buttons/rect-btn-pre-mobile.svg') center center
+				no-repeat;
+			-webkit-mask: url('../images/buttons/rect-btn-pre-mobile.svg') center
+				center no-repeat;
+			width: 34px;
+			height: 34px;
+			position: absolute;
+			top: -2px;
+			left: -2px;
+			@include media-breakpoint-up(md) {
+				mask: url('../images/buttons/rect-btn-pre-tablet.svg') center center
+					no-repeat;
+				-webkit-mask: url('../images/buttons/rect-btn-pre-tablet.svg') center
+					center no-repeat;
+				width: 48px;
+				height: 48px;
+				top: -3px;
+				left: -3px;
+			}
+			@include media-breakpoint-up(xl) {
+				mask: url('../images/buttons/rect-btn-pre.svg') center center no-repeat;
+				-webkit-mask: url('../images/buttons/rect-btn-pre.svg') center center
+					no-repeat;
+				width: 64px;
+				height: 64px;
+				top: -4px;
+				left: -4px;
+			}
+		}
+	}
+	&.tile {
+		&::before {
+			content: '';
+			mask: url('../images/buttons/tile-btn-pre-mobile.svg') center center
+				no-repeat;
+			-webkit-mask: url('../images/buttons/tile-btn-pre-mobile.svg') center
+				center no-repeat;
+			width: 34px;
+			height: 34px;
+			position: absolute;
+			top: -2px;
+			left: -2px;
+			@include media-breakpoint-up(md) {
+				mask: url('../images/buttons/tile-btn-pre-tablet.svg') center center
+					no-repeat;
+				-webkit-mask: url('../images/buttons/tile-btn-pre-tablet.svg') center
+					center no-repeat;
+				width: 48px;
+				height: 48px;
+				top: -3px;
+				left: -3px;
+			}
+			@include media-breakpoint-up(xl) {
+				mask: url('../images/buttons/tile-btn-pre.svg') center center no-repeat;
+				-webkit-mask: url('../images/buttons/tile-btn-pre.svg') center center
+					no-repeat;
+				width: 64px;
+				height: 64px;
+				top: -4px;
+				left: -4px;
+			}
+		}
+		&.pre-teal {
+			color: $darkTeal;
+			border-color: $darkTeal;
+			&::before {
+				background: $darkTeal;
+			}
+
+			&:hover {
+				#chekin & {
+					color: $red;
+				}
+				color: $lightStone;
+				background-image: linear-gradient(
+					to right,
+					$lightStone 0%,
+					$lightStone 34px,
+					$darkTeal 34px,
+					$darkTeal
+				);
+				#rooftop & {
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 60px,
+						$darkTeal 60px,
+						$darkTeal
+					);
+				}
+				#chekin & {
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 60px,
+						$darkTeal 60px,
+						$darkTeal
+					);
+				}
+				@include media-breakpoint-up(md) {
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 48px,
+						$gold 48px,
+						$gold
+					);
+					#rooftop & {
+						background-image: linear-gradient(
+							to right,
+							$red 0%,
+							$red 48px,
+							$darkTeal 48px,
+							$darkTeal
+						);
+					}
+					#chekin & {
+						background-image: linear-gradient(
+							to right,
+							$red 0%,
+							$red 48px,
+							$darkTeal 48px,
+							$darkTeal
+						);
+					}
+				}
+				@include media-breakpoint-up(xl) {
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 60px,
+						$gold 60px,
+						$gold
+					);
+					#rooftop & {
+						background-image: linear-gradient(
+							to right,
+							$lightStone 0%,
+							$lightStone 60px,
+							$darkTeal 60px,
+							$darkTeal
+						);
+					}
+					#chekin & {
+						background-image: linear-gradient(
+							to right,
+							$red 0%,
+							$red 60px,
+							$darkTeal 60px,
+							$darkTeal
+						);
+					}
+				}
+			}
+		}
+		&.teal {
+			&:active,
+			&:focus {
+				&::before {
+					background: $green;
+				}
+				outline: none;
+				box-shadow: none;
+				color: $lightStone;
+				border-color: $green;
+				#chekin & {
+					color: $red;
+				}
+				background-image: linear-gradient(
+					to right,
+					$lightStone 0%,
+					$lightStone 34px,
+					$green 34px,
+					$green
+				);
+				#chekin & {
+					background-image: linear-gradient(
+						to right,
+						$red 0%,
+						$red 34px,
+						$green 34px,
+						$green
+					);
+				}
+				@include media-breakpoint-up(md) {
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 48px,
+						$green 48px,
+						$green
+					);
+				}
+				#chekin & {
+					background-image: linear-gradient(
+						to right,
+						$red 0%,
+						$red 48px,
+						$green 48px,
+						$green
+					);
+				}
+				@include media-breakpoint-up(xl) {
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 60px,
+						$green 60px,
+						$green
+					);
+					#chekin & {
+						background-image: linear-gradient(
+							to right,
+							$red 0%,
+							$red 60px,
+							$green 60px,
+							$green
+						);
+					}
+				}
+			}
+		}
+		&.pre-gold {
+			color: $gold;
+			border-color: $gold;
+			&::before {
+				background: $gold;
+			}
+			&:hover {
+				color: $lightStone;
+				background-image: linear-gradient(
+					to right,
+					$lightStone 0%,
+					$lightStone 34px,
+					$gold 34px,
+					$gold
+				);
+
+				@include media-breakpoint-up(md) {
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 48px,
+						$gold 48px,
+						$gold
+					);
+				}
+				@include media-breakpoint-up(xl) {
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 60px,
+						$gold 60px,
+						$gold
+					);
+				}
+			}
+		}
+		&.gold {
+			&:active,
+			&:focus {
+				&::before {
+					background: $green;
+				}
+				outline: none;
+				box-shadow: none;
+				color: $lightStone;
+				border-color: $green;
+				#chekin & {
+					color: $red;
+				}
+				background-image: linear-gradient(
+					to right,
+					$lightStone 0%,
+					$lightStone 34px,
+					$green 34px,
+					$green
+				);
+				#chekin & {
+					background-image: linear-gradient(
+						to right,
+						$red 0%,
+						$red 34px,
+						$green 34px,
+						$green
+					);
+				}
+				@include media-breakpoint-up(md) {
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 48px,
+						$green 48px,
+						$green
+					);
+				}
+				#chekin & {
+					background-image: linear-gradient(
+						to right,
+						$red 0%,
+						$red 48px,
+						$green 48px,
+						$green
+					);
+				}
+				@include media-breakpoint-up(xl) {
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 60px,
+						$green 60px,
+						$green
+					);
+					#chekin & {
+						background-image: linear-gradient(
+							to right,
+							$red 0%,
+							$red 60px,
+							$green 60px,
+							$green
+						);
+					}
+				}
+			}
+		}
+		&.pre-blue {
+			&::before {
+				background: $lightBlue;
+				border-color: $lightBlue;
+			}
+			&:hover {
+				color: $lightStone;
+				#bar & {
+					color: $gold;
+				}
+				background-image: linear-gradient(
+					to right,
+					$green 0%,
+					$green 34px,
+					$lightBlue 34px,
+					$lightBlue
+				);
+				#bar & {
+					background-image: linear-gradient(
+						to right,
+						$gold 0%,
+						$gold 34px,
+						$lightBlue 34px,
+						$lightBlue
+					);
+				}
+				@include media-breakpoint-up(md) {
+					background-image: linear-gradient(
+						to right,
+						$green 0%,
+						$green 48px,
+						$lightBlue 48px,
+						$lightBlue
+					);
+					#bar & {
+						background-image: linear-gradient(
+							to right,
+							$gold 0%,
+							$gold 34px,
+							$gold 34px,
+							$gold
+						);
+					}
+				}
+
+				@include media-breakpoint-up(xl) {
+					background-image: linear-gradient(
+						to right,
+						$green 0%,
+						$green 60px,
+						$lightBlue 60px,
+						$lightBlue
+					);
+					#bar & {
+						background-image: linear-gradient(
+							to right,
+							$gold 0%,
+							$gold 60px,
+							$lightBlue 60px,
+							$lightBlue
+						);
+					}
+				}
+			}
+			&.blue {
+				color: $lightBlue;
+				border-color: $lightBlue;
+				&:hover {
+					color: $green;
+				}
+				&:focus,
+				&:active {
+					&::before {
+						background: $darkTeal;
+					}
+					#bar & {
+						color: $gold;
+					}
+					border-color: $darkTeal;
+					color: $lightBlue;
+					background-image: linear-gradient(
+						to right,
+						$green 0%,
+						$green 34px,
+						$darkTeal 34px,
+						$darkTeal
+					);
+					#bar & {
+						background-image: linear-gradient(
+							to right,
+							$green 0%,
+							$green 34px,
+							$darkTeal 34px,
+							$darkTeal
+						);
+					}
+					@include media-breakpoint-up(md) {
+						background-image: linear-gradient(
+							to right,
+							$gold 0%,
+							$gold 48px,
+							$darkTeal 48px,
+							$darkTeal
+						);
+						#bar & {
+							background-image: linear-gradient(
+								to right,
+								$gold 0%,
+								$gold 48px,
+								$darkTeal 48px,
+								$darkTeal
+							);
+						}
+					}
+					background-image: linear-gradient(
+						to right,
+						$gold 0%,
+						$gold 34px,
+						$darkTeal 34px,
+						$darkTeal
+					);
+					@include media-breakpoint-up(xl) {
+						background-image: linear-gradient(
+							to right,
+							$gold 0%,
+							$gold 60px,
+							$darkTeal 60px,
+							$darkTeal
+						);
+						background-image: linear-gradient(
+							to right,
+							$green 0%,
+							$green 60px,
+							$darkTeal 60px,
+							$darkTeal
+						);
+					}
+				}
+			}
+			&.tile {
+				&::before {
+					content: '';
+					mask: url('../images/buttons/tile-btn-pre-mobile.svg') center center
+						no-repeat;
+					-webkit-mask: url('../images/buttons/tile-btn-pre-mobile.svg') center
+						center no-repeat;
+					width: 34px;
+					height: 34px;
+					position: absolute;
+					top: -2px;
+					left: -2px;
+					@include media-breakpoint-up(md) {
+						mask: url('../images/buttons/tile-btn-pre-tablet.svg') center center
+							no-repeat;
+						-webkit-mask: url('../images/buttons/tile-btn-pre-tablet.svg')
+							center center no-repeat;
+						width: 48px;
+						height: 48px;
+						top: -3px;
+						left: -3px;
+					}
+					@include media-breakpoint-up(xl) {
+						mask: url('../images/buttons/tile-btn-pre.svg') center center
+							no-repeat;
+						-webkit-mask: url('../images/buttons/tile-btn-pre.svg') center
+							center no-repeat;
+						width: 64px;
+						height: 64px;
+						top: -4px;
+						left: -4px;
+					}
+				}
+				&.pre-teal {
+					color: $darkTeal;
+					border-color: $darkTeal;
+					&::before {
+						background: $darkTeal;
+					}
+					&:hover {
+						color: $lightStone;
+						background-image: linear-gradient(
+							to right,
+							$lightStone 0%,
+							$lightStone 34px,
+							$darkTeal 34px,
+							$darkTeal
+						);
+						#rooftop {
+							background-image: linear-gradient(
+								to right,
+								$lightStone 0%,
+								$lightStone 60px,
+								$darkTeal 60px,
+								$darkTeal
+							);
+						}
+						@include media-breakpoint-up(md) {
+							background-image: linear-gradient(
+								to right,
+								$lightStone 0%,
+								$lightStone 48px,
+								$gold 48px,
+								$gold
+							);
+							#rooftop {
+								background-image: linear-gradient(
+									to right,
+									$lightStone 0%,
+									$lightStone 60px,
+									$darkTeal 60px,
+									$darkTeal
+								);
+							}
+						}
+						@include media-breakpoint-up(xl) {
+							background-image: linear-gradient(
+								to right,
+								$lightStone 0%,
+								$lightStone 60px,
+								$gold 60px,
+								$gold
+							);
+							#rooftop {
+								background-image: linear-gradient(
+									to right,
+									$lightStone 0%,
+									$lightStone 60px,
+									$darkTeal 60px,
+									$darkTeal
+								);
+							}
+						}
+					}
+				}
+				&.teal {
+					&:active,
+					&:focus {
+						&::before {
+							background: $green;
+						}
+						outline: none;
+						box-shadow: none;
+						color: $lightStone;
+						border-color: $green;
+						background-image: linear-gradient(
+							to right,
+							$lightStone 0%,
+							$lightStone 34px,
+							$green 34px,
+							$green
+						);
+						@include media-breakpoint-up(md) {
+							background-image: linear-gradient(
+								to right,
+								$lightStone 0%,
+								$lightStone 48px,
+								$green 48px,
+								$green
+							);
+						}
+						background-image: linear-gradient(
+							to right,
+							$lightStone 0%,
+							$lightStone 34px,
+							$green 34px,
+							$green
+						);
+						@include media-breakpoint-up(xl) {
+							background-image: linear-gradient(
+								to right,
+								$lightStone 0%,
+								$lightStone 60px,
+								$green 60px,
+								$green
+							);
+						}
+					}
+				}
+
+				// &.pre-green {
+				// 	&::before {
+				// 		background: $green;
+				// 	}
+				// }
+				// &.pre-teal {
+				// 	&::before {
+				// 		background: $darkTeal;
+				// 	}
+				// }
+				// &.pre-gold {
+				// 	&::before {
+				// 		background: $gold;
+				// 	}
+				// }
+			}
+			// &:active,
+			// &:focus {
+			// 	&::before {
+			// 		background: $darkTeal;
+			// 	}
+			// 	outline: none;
+			// 	box-shadow: none;
+			// }
+		}
+		&.blue {
+			.page-template-home #eat & {
+				&:hover {
+					color: $green;
+				}
+			}
+			&:focus,
+			&:active {
+				&::before {
+					background: $darkTeal;
+				}
+				border-color: $darkTeal;
+				color: $gold;
+				#questions & {
+					color: $lightBlue;
+				}
+				background-image: linear-gradient(
+					to right,
+					$gold 0%,
+					$gold 34px,
+					$darkTeal 34px,
+					$darkTeal
+				);
+
+				#questions & {
+					background-image: linear-gradient(
+						to right,
+						$lightBlue 0%,
+						$lightBlue 34px,
+						$red 34px,
+						$red
+					);
+				}
+				@include media-breakpoint-up(md) {
+					background-image: linear-gradient(
+						to right,
+						$gold 0%,
+						$gold 48px,
+						$darkTeal 48px,
+						$darkTeal
+					);
+					#questions & {
+						background-image: linear-gradient(
+							to right,
+							$lightBlue 0%,
+							$lightBlue 48px,
+							$gold 48px,
+							$gold
+						);
+					}
+				}
+
+				@include media-breakpoint-up(xl) {
+					background-image: linear-gradient(
+						to right,
+						$gold 0%,
+						$gold 60px,
+						$darkTeal 60px,
+						$darkTeal
+					);
+					#questions & {
+						background-image: linear-gradient(
+							to right,
+							$lightBlue 0%,
+							$lightBlue 60px,
+							$gold 60px,
+							$gold
+						);
+					}
+				}
+			}
+		}
+		&.pre-light {
+			color: $lightStone;
+			border-color: $lightStone;
+			&::before {
+				background: $lightStone;
+			}
+			&:hover {
+				color: $gold;
+				background-image: linear-gradient(
+					to right,
+					$gold 0%,
+					$gold 34px,
+					$lightStone 34px,
+					$lightStone
+				);
+
+				@include media-breakpoint-up(md) {
+					background-image: linear-gradient(
+						to right,
+						$gold 0%,
+						$gold 48px,
+						$lightStone 48px,
+						$lightStone
+					);
+				}
+				@include media-breakpoint-up(xl) {
+					background-image: linear-gradient(
+						to right,
+						$gold 0%,
+						$gold 60px,
+						$lightStone 60px,
+						$lightStone
+					);
+				}
+			}
+		}
+		&.light {
+			&:active,
+			&:focus {
+				&::before {
+					background: $red;
+				}
+				outline: none;
+				box-shadow: none;
+				color: $gold;
+				border-color: $red;
+
+				background-image: linear-gradient(
+					to right,
+					$gold 0%,
+					$gold 34px,
+					$red 34px,
+					$red
+				);
+
+				@include media-breakpoint-up(md) {
+					background-image: linear-gradient(
+						to right,
+						$gold 0%,
+						$gold 48px,
+						$red 48px,
+						$red
+					);
+				}
+
+				@include media-breakpoint-up(xl) {
+					background-image: linear-gradient(
+						to right,
+						$gold 0%,
+						$gold 60px,
+						$red 60px,
+						$red
+					);
+				}
+			}
+		}
+	}
+	&.diamond {
+		&::before {
+			content: '';
+			mask: url('../images/buttons/diamond-btn-pre-mobile.svg') center center
+				no-repeat;
+			-webkit-mask: url('../images/buttons/diamond-btn-pre-mobile.svg') center
+				center no-repeat;
+			position: absolute;
+			width: 34px;
+			height: 34px;
+			top: -2px;
+			left: -2px;
+			@include media-breakpoint-up(md) {
+				mask: url('../images/buttons/diamond-btn-pre-tablet.svg') center center
+					no-repeat;
+				-webkit-mask: url('../images/buttons/diamond-btn-pre-tablet.svg') center
+					center no-repeat;
+				width: 48px;
+				height: 48px;
+				top: -3px;
+				left: -3px;
+			}
+			@include media-breakpoint-up(xl) {
+				mask: url('../images/buttons/diamond-btn-pre.svg') center center
+					no-repeat;
+				-webkit-mask: url('../images/buttons/diamond-btn-pre.svg') center center
+					no-repeat;
+				width: 64px;
+				height: 64px;
+				top: -4px;
+				left: -4px;
+			}
+		}
+		&.pre-red {
+			&::before {
+				background: $red;
+			}
+			&:hover {
+				color: $lightStone;
+				.page-template-home #rooms & {
+					color: $lightStone;
+					border-color: $red;
+				}
+				#questions & {
+					color: $lightBlue;
+					background-image: linear-gradient(
+						to right,
+						$lightBlue 0%,
+						$lightBlue 34px,
+						$red 34px,
+						$red
+					);
+				}
+				#firepit-section & {
+					color: $lightBlue;
+					background-image: linear-gradient(
+						to right,
+						$lightBlue 0%,
+						$lightBlue 34px,
+						$red 34px,
+						$red
+					);
+				}
+				background-image: linear-gradient(
+					to right,
+					$lightStone 0%,
+					$lightStone 34px,
+					$red 34px,
+					$red
+				);
+
+				@include media-breakpoint-up(md) {
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 48px,
+						$red 48px,
+						$red
+					);
+					#questions & {
+						background-image: linear-gradient(
+							to right,
+							$lightBlue 0%,
+							$lightBlue 48px,
+							$red 48px,
+							$red
+						);
+					}
+					#firepit-section & {
+						background-image: linear-gradient(
+							to right,
+							$lightBlue 0%,
+							$lightBlue 48px,
+							$red 48px,
+							$red
+						);
+					}
+
+					@include media-breakpoint-up(xl) {
+						background-image: linear-gradient(
+							to right,
+							$lightStone 0%,
+							$lightStone 60px,
+							$red 60px,
+							$red
+						);
+						#questions & {
+							color: $lightBlue;
+							background-image: linear-gradient(
+								to right,
+								$lightBlue 0%,
+								$lightBlue 60px,
+								$red 60px,
+								$red
+							);
+						}
+						#firepit-section & {
+							background-image: linear-gradient(
+								to right,
+								$lightBlue 0%,
+								$lightBlue 60px,
+								$red 60px,
+								$red
+							);
+						}
+					}
+				}
+			}
+		}
+		&.red {
+			#firepit-section & {
+				border-color: $red;
+				color: $red;
+			}
+
+			// border-color: $gold;
+			// color: $lightStone;
+			.page-template-home #rooms & {
+				color: $red;
+				border-color: $red;
+			}
+			.blog .promo-red & {
+				color: $red;
+				border-color: $red;
+				&:hover {
+					color: $lightStone;
+				}
+			}
+			.page-template-home #questions & {
+				color: $red;
+				border-color: $red;
+				&:hover {
+					color: $lightBlue;
+				}
+			}
+			&:focus,
+			&:active {
+				&::before {
+					background: $darkTeal;
+					.page-template-home #questions & {
+						background: $gold;
+					}
+					.blog .promo-red & {
+						background: $gold;
+					}
+				}
+				#firepit-section & {
+					border-color: $darkTeal;
+				}
+				border-color: $gold;
+				color: $lightStone;
+				#questions & {
+					color: $lightBlue;
+				}
+				#firepit-section & {
+					color: $lightBlue;
+				}
+				.page-template-home #questions & {
+					border-color: $gold;
+				}
+
+				.blog .promo-red & {
+					border-color: $gold;
+				}
+				.blog .promo-red & {
+					border-color: $gold;
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 34px,
+						$gold 34px,
+						$gold
+					);
+				}
+				.page-template-home #rooms & {
+					border-color: $darkTeal;
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 34px,
+						$darkTeal 34px,
+						$darkTeal
+					);
+				}
+				background-image: linear-gradient(
+					to right,
+					$lightStone 0%,
+					$lightStone 34px,
+					$gold 34px,
+					$gold
+				);
+
+				#questions & {
+					background-image: linear-gradient(
+						to right,
+						$lightBlue 0%,
+						$lightBlue 34px,
+						$red 34px,
+						$red
+					);
+				}
+				#firepit-section & {
+					background-image: linear-gradient(
+						to right,
+						$lightBlue 0%,
+						$lightBlue 34px,
+						$darkTeal 34px,
+						$darkTeal
+					);
+				}
+				.blog .promo-red & {
+					border-color: $gold;
+					color: $lightStone;
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 48px,
+						$gold 48px,
+						$gold
+					);
+				}
+				@include media-breakpoint-up(md) {
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 48px,
+						$gold 48px,
+						$gold
+					);
+					#questions & {
+						background-image: linear-gradient(
+							to right,
+							$lightBlue 0%,
+							$lightBlue 48px,
+							$gold 48px,
+							$gold
+						);
+					}
+					#firepit-section & {
+						background-image: linear-gradient(
+							to right,
+							$lightBlue 0%,
+							$lightBlue 48px,
+							$darkTeal 48px,
+							$darkTeal
+						);
+					}
+					.page-template-home #rooms & {
+						color: $darkTeal;
+						background-image: linear-gradient(
+							to right,
+							$lightStone 0%,
+							$lightStone 48px,
+							$darkTeal 48px,
+							$darkTeal
+						);
+					}
+					.blog .promo-red & {
+						background-image: linear-gradient(
+							to right,
+							$lightStone 0%,
+							$lightStone 60px,
+							$gold 60px,
+							$gold
+						);
+					}
+				}
+
+				@include media-breakpoint-up(xl) {
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 60px,
+						$gold 60px,
+						$gold
+					);
+					#questions & {
+						background-image: linear-gradient(
+							to right,
+							$lightBlue 0%,
+							$lightBlue 60px,
+							$gold 60px,
+							$gold
+						);
+					}
+					#firepit-section & {
+						background-image: linear-gradient(
+							to right,
+							$lightBlue 0%,
+							$lightBlue 60px,
+							$darkTeal 60px,
+							$darkTeal
+						);
+					}
+					.page-template-home #rooms & {
+						color: $darkTeal;
+						background-image: linear-gradient(
+							to right,
+							$lightStone 0%,
+							$lightStone 60px,
+							$darkTeal 60px,
+							$darkTeal
+						);
+					}
+				}
+			}
+		}
+		&.pre-blue {
+			&::before {
+				background: $lightBlue;
+			}
+			&:hover {
+				#questions & {
+					color: $lightBlue;
+					background-image: linear-gradient(
+						to right,
+						$lightBlue 0%,
+						$lightBlue 34px,
+						$red 34px,
+						$red
+					);
+				}
+				color: $gold;
+				background-image: linear-gradient(
+					to right,
+					$gold 0%,
+					$gold 34px,
+					$lightBlue 34px,
+					$lightBlue
+				);
+
+				@include media-breakpoint-up(md) {
+					background-image: linear-gradient(
+						to right,
+						$gold 0%,
+						$gold 48px,
+						$lightBlue 48px,
+						$lightBlue
+					);
+					#questions & {
+						background-image: linear-gradient(
+							to right,
+							$lightBlue 0%,
+							$lightBlue 48px,
+							$red 48px,
+							$red
+						);
+					}
+
+					@include media-breakpoint-up(xl) {
+						background-image: linear-gradient(
+							to right,
+							$gold 0%,
+							$gold 60px,
+							$lightBlue 60px,
+							$lightBlue
+						);
+						#questions & {
+							color: $lightBlue;
+							background-image: linear-gradient(
+								to right,
+								$lightBlue 0%,
+								$lightBlue 60px,
+								$red 60px,
+								$red
+							);
+						}
+					}
+				}
+			}
+		}
+		&.blue {
+			.page-template-stay #mini-section & {
+				border-color: $lightBlue;
+				color: $lightBlue;
+				&:hover {
+					color: $gold;
+				}
+			}
+			&:focus,
+			&:active {
+				&::before {
+					background: $darkTeal;
+				}
+				border-color: $darkTeal;
+				color: $gold;
+				#questions & {
+					color: $lightBlue;
+				}
+				.page-template-stay #mini-section & {
+					border-color: $darkTeal;
+				}
+				background-image: linear-gradient(
+					to right,
+					$gold 0%,
+					$gold 34px,
+					$darkTeal 34px,
+					$darkTeal
+				);
+
+				#questions & {
+					background-image: linear-gradient(
+						to right,
+						$lightBlue 0%,
+						$lightBlue 34px,
+						$red 34px,
+						$red
+					);
+				}
+				@include media-breakpoint-up(md) {
+					background-image: linear-gradient(
+						to right,
+						$gold 0%,
+						$gold 48px,
+						$darkTeal 48px,
+						$darkTeal
+					);
+					#questions & {
+						background-image: linear-gradient(
+							to right,
+							$lightBlue 0%,
+							$lightBlue 48px,
+							$gold 48px,
+							$gold
+						);
+					}
+				}
+
+				@include media-breakpoint-up(xl) {
+					background-image: linear-gradient(
+						to right,
+						$gold 0%,
+						$gold 60px,
+						$darkTeal 60px,
+						$darkTeal
+					);
+					#questions & {
+						background-image: linear-gradient(
+							to right,
+							$lightBlue 0%,
+							$lightBlue 60px,
+							$gold 60px,
+							$gold
+						);
+					}
+				}
+			}
+		}
+		&.pre-green {
+			&::before {
+				background: $green;
+			}
+			&:hover {
+				color: $lightStone;
+
+				background-image: linear-gradient(
+					to right,
+					$lightStone 0%,
+					$lightStone 34px,
+					$green 34px,
+					$green
+				);
+
+				@include media-breakpoint-up(md) {
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 48px,
+						$green 48px,
+						$green
+					);
+
+					@include media-breakpoint-up(xl) {
+						background-image: linear-gradient(
+							to right,
+							$lightStone 0%,
+							$lightStone 60px,
+							$green 60px,
+							$green
+						);
+					}
+				}
+			}
+		}
+		&.green {
+			border-color: $green;
+			color: $green;
+			&:focus,
+			&:active {
+				&::before {
+					background: $darkTeal;
+				}
+				border-color: $darkTeal;
+				color: $lightStone;
+				#questions & {
+					color: $lightBlue;
+				}
+				background-image: linear-gradient(
+					to right,
+					$lightStone 0%,
+					$lightStone 34px,
+					$darkTeal 34px,
+					$darkTeal
+				);
+
+				#questions & {
+					background-image: linear-gradient(
+						to right,
+						$lightBlue 0%,
+						$lightBlue 34px,
+						$red 34px,
+						$red
+					);
+				}
+				@include media-breakpoint-up(md) {
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 48px,
+						$darkTeal 48px,
+						$darkTeal
+					);
+				}
+
+				@include media-breakpoint-up(xl) {
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 60px,
+						$darkTeal 60px,
+						$darkTeal
+					);
+					#questions & {
+						background-image: linear-gradient(
+							to right,
+							$lightBlue 0%,
+							$lightBlue 60px,
+							$gold 60px,
+							$gold
+						);
+					}
+				}
+			}
+		}
+		&.pre-teal {
+			&::before {
+				background: $darkTeal;
+			}
+			&:hover {
+				color: $red;
+				#firepit-balcony-section & {
+					background: $lightStone;
+					color: $lightStone;
+				}
+				background-image: linear-gradient(
+					to right,
+					$red 0%,
+					$red 34px,
+					$darkTeal 34px,
+					$darkTeal
+				);
+				#firepit-balcony-section & {
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 34px,
+						$darkTeal 34px,
+						$darkTeal
+					);
+				}
+				@include media-breakpoint-up(md) {
+					background-image: linear-gradient(
+						to right,
+						$red 0%,
+						$red 48px,
+						$darkTeal 48px,
+						$darkTeal
+					);
+					#firepit-balcony-section & {
+						background-image: linear-gradient(
+							to right,
+							$lightStone 0%,
+							$lightStone 48px,
+							$darkTeal 48px,
+							$darkTeal
+						);
+					}
+					@include media-breakpoint-up(xl) {
+						background-image: linear-gradient(
+							to right,
+							$red 0%,
+							$red 60px,
+							$darkTeal 60px,
+							$darkTeal
+						);
+						#firepit-balcony-section & {
+							background-image: linear-gradient(
+								to right,
+								$lightStone 0%,
+								$lightStone 60px,
+								$darkTeal 60px,
+								$darkTeal
+							);
+						}
+					}
+				}
+			}
+		}
+		&.teal {
+			color: $darkTeal;
+			border-color: $darkTeal;
+			#firepit-balcony-section & {
+				color: $darkTeal;
+				border-color: $darkTeal;
+			}
+			&:focus,
+			&:active {
+				&::before {
+					background: $lightStone;
+					#firepit-balcony-section & {
+						background: $red;
+					}
+				}
+				#firepit-balcony-section & {
+					color: $lightStone;
+					border-color: $red;
+				}
+				border-color: $lightStone;
+				color: $red;
+				background-image: linear-gradient(
+					to right,
+					$red 0%,
+					$red 34px,
+					$lightStone 34px,
+					$lightStone
+				);
+				#firepit-balcony-section & {
+					background-image: linear-gradient(
+						to right,
+						$lightStone 0%,
+						$lightStone 34px,
+						$red 34px,
+						$red
+					);
+				}
+				@include media-breakpoint-up(md) {
+					background-image: linear-gradient(
+						to right,
+						$red 0%,
+						$red 48px,
+						$lightStone 48px,
+						$lightStone
+					);
+					#firepit-balcony-section & {
+						background-image: linear-gradient(
+							to right,
+							$lightStone 0%,
+							$lightStone 48px,
+							$red 48px,
+							$red
+						);
+					}
+				}
+
+				@include media-breakpoint-up(xl) {
+					background-image: linear-gradient(
+						to right,
+						$red 0%,
+						$red 60px,
+						$lightStone 60px,
+						$lightStone
+					);
+					#firepit-balcony-section & {
+						background-image: linear-gradient(
+							to right,
+							$lightStone 0%,
+							$lightStone 60px,
+							$red 60px,
+							$red
+						);
+					}
+				}
+			}
+		}
+	}
+	&.flower {
+		&::before {
+			content: '';
+			-webkit-mask: url('../images/buttons/flower-btn-pre-mobile.svg') center
+				center no-repeat;
+			mask: url('../images/buttons/flower-btn-pre-mobile.svg') center center
+				no-repeat;
+			width: 34px;
+			height: 34px;
+			position: absolute;
+			top: -2px;
+			left: -2px;
+			@include media-breakpoint-up(md) {
+				mask: url('../images/buttons/flower-btn-pre-tablet.svg') center center
+					no-repeat;
+				-webkit-mask: url('../images/buttons/flower-btn-pre-tablet.svg') center
+					center no-repeat;
+				width: 48px;
+				height: 48px;
+				top: -3px;
+				left: -3px;
+			}
+			@include media-breakpoint-up(xl) {
+				top: -4px;
+				left: -4px;
+				width: 64px;
+				height: 64px;
+				-webkit-mask: url('../images/buttons/flower-btn-pre.svg') center center
+					no-repeat;
+				mask: url('../images/buttons/flower-btn-pre.svg') center center
+					no-repeat;
+			}
+		}
+		&.pre-gold {
+			&::before {
+				background: $gold;
+			}
+			&:hover {
+				color: $lightBlue;
+				background-image: linear-gradient(
+					to right,
+					$lightBlue 0%,
+					$lightBlue 34px,
+					$gold 34px,
+					$gold
+				);
+				@include media-breakpoint-up(md) {
+					background-image: linear-gradient(
+						to right,
+						$lightBlue 0%,
+						$lightBlue 48px,
+						$gold 48px,
+						$gold
+					);
+				}
+				background-image: linear-gradient(
+					to right,
+					$lightBlue 0%,
+					$lightBlue 34px,
+					$gold 34px,
+					$gold
+				);
+				@include media-breakpoint-up(xl) {
+					background-image: linear-gradient(
+						to right,
+						$lightBlue 0%,
+						$lightBlue 60px,
+						$gold 60px,
+						$gold
+					);
+				}
+			}
+		}
+		&.gold {
+			.page-template-discover #history & {
+				border-color: $gold;
+				color: $gold;
+				&:hover {
+					color: $lightBlue;
+				}
+			}
+
+			&:focus,
+			&:active {
+				&::before {
+					background: $green;
+				}
+				.page-template-discover #history & {
+					border-color: $green;
+					color: $lightBlue;
+				}
+				border-color: $green;
+				color: $lightBlue;
+				background-image: linear-gradient(
+					to right,
+					$lightBlue 0%,
+					$lightBlue 34px,
+					$green 34px,
+					$green
+				);
+				@include media-breakpoint-up(md) {
+					background-image: linear-gradient(
+						to right,
+						$lightBlue 0%,
+						$lightBlue 48px,
+						$green 48px,
+						$green
+					);
+				}
+				background-image: linear-gradient(
+					to right,
+					$lightBlue 0%,
+					$lightBlue 34px,
+					$green 34px,
+					$green
+				);
+				@include media-breakpoint-up(xl) {
+					background-image: linear-gradient(
+						to right,
+						$lightBlue 0%,
+						$lightBlue 60px,
+						$green 60px,
+						$green
+					);
+				}
+			}
+		}
+		&.pre-teal {
+			&::before {
+				background: $darkTeal;
+			}
+			&:hover {
+				color: $red;
+				.page-template-home #explore & {
+					color: $red;
+				}
+				background-image: linear-gradient(
+					to right,
+					$red 0%,
+					$red 34px,
+					$darkTeal 34px,
+					$darkTeal
+				);
+				#explore & {
+					background-image: linear-gradient(
+						to right,
+						$red 0%,
+						$red 34px,
+						$lightBlue 34px,
+						$lightBlue
+					);
+				}
+				.page-template-home #explore & {
+					background-image: linear-gradient(
+						to right,
+						$red 0%,
+						$red 34px,
+						$darkTeal 34px,
+						$darkTeal
+					);
+				}
+				@include media-breakpoint-up(md) {
+					background-image: linear-gradient(
+						to right,
+						$red 0%,
+						$red 48px,
+						$darkTeal 48px,
+						$darkTeal
+					);
+					#explore & {
+						background-image: linear-gradient(
+							to right,
+							$red 0%,
+							$red 48px,
+							$lightBlue 48px,
+							$lightBlue
+						);
+					}
+					.page-template-home #explore & {
+						background-image: linear-gradient(
+							to right,
+							$red 0%,
+							$red 48px,
+							$darkTeal 48px,
+							$darkTeal
+						);
+					}
+
+					@include media-breakpoint-up(xl) {
+						background-image: linear-gradient(
+							to right,
+							$red 0%,
+							$red 60px,
+							$darkTeal 60px,
+							$darkTeal
+						);
+						#explore & {
+							background-image: linear-gradient(
+								to right,
+								$red 0%,
+								$red 60px,
+								$lightBlue 60px,
+								$lightBlue
+							);
+						}
+						.page-template-home #explore & {
+							background-image: linear-gradient(
+								to right,
+								$red 0%,
+								$red 60px,
+								$darkTeal 60px,
+								$darkTeal
+							);
+						}
+					}
+				}
+			}
+		}
+		&.teal {
+			.page-template-home #explore & {
+				color: $darkTeal;
+				border-color: $darkTeal;
+			}
+			&:focus,
+			&:active {
+				&::before {
+					background-color: $darkTeal;
+					#explore & {
+						background-color: $lightBlue;
+					}
+				}
+
+				border-color: $lightBlue;
+				color: $red;
+				.page-template-home #explore & {
+					color: $red;
+					border-color: $darkTeal;
+				}
+				#explore & {
+					border-color: $lightBlue;
+				}
+				.page-template-home #explore & {
+					border-color: $lightBlue;
+				}
+				background-image: linear-gradient(
+					to right,
+					$red 0%,
+					$red 34px,
+					$lightBlue 34px,
+					$lightBlue
+				);
+				#explore & {
+					background-image: linear-gradient(
+						to right,
+						$red 0%,
+						$red 34px,
+						$lightBlue 34px,
+						$lightBlue
+					);
+				}
+				@include media-breakpoint-up(md) {
+					background-image: linear-gradient(
+						to right,
+						$red 0%,
+						$red 48px,
+						$lightBlue 48px,
+						$lightBlue
+					);
+					#explore & {
+						background-image: linear-gradient(
+							to right,
+							$red 0%,
+							$red 48px,
+							$lightBlue 48px,
+							$lightBlue
+						);
+					}
+				}
+
+				@include media-breakpoint-up(xl) {
+					background-image: linear-gradient(
+						to right,
+						$red 0%,
+						$red 60px,
+						$lightBlue 60px,
+						$lightBlue
+					);
+					#explore & {
+						background-image: linear-gradient(
+							to right,
+							$red 0%,
+							$red 60px,
+							$lightBlue 60px,
+							$lightBlue
+						);
+					}
+				}
+			}
+		}
+	}
+}
+.wp-block-buttons {
+	float: right;
+}
+.wp-block-button__link {
+	&::before {
+		content: '';
+		mask: url('../images/buttons/diamond-btn-pre-mobile.svg') center center
+			no-repeat;
+		-webkit-mask: url('../images/buttons/diamond-btn-pre-mobile.svg') center
+			center no-repeat;
+		position: absolute;
+		width: 34px;
+		height: 34px;
+		top: -2px;
+		left: -2px;
+		background-color: $gold;
+		@include media-breakpoint-up(md) {
+			mask: url('../images/buttons/diamond-btn-pre-tablet.svg') center center
+				no-repeat;
+			-webkit-mask: url('../images/buttons/diamond-btn-pre-tablet.svg') center
+				center no-repeat;
+			width: 48px;
+			height: 48px;
+			top: -3px;
+			left: -3px;
+		}
+		@include media-breakpoint-up(xl) {
+			mask: url('../images/buttons/diamond-btn-pre.svg') center center no-repeat;
+			-webkit-mask: url('../images/buttons/diamond-btn-pre.svg') center center
+				no-repeat;
+			width: 64px;
+			height: 64px;
+			top: -4px;
+			left: -4px;
+		}
+	}
+	color: $gold;
+	border-color: $gold;
+	&:hover {
+		color: $lightBlue;
+
+		background-image: linear-gradient(
+			to right,
+			$lightBlue 0%,
+			$lightBlue 34px,
+			$gold 34px,
+			$gold
+		);
+		@include media-breakpoint-up(md) {
+			background-image: linear-gradient(
+				to right,
+				$lightBlue 0%,
+				$lightBlue 48px,
+				$gold 48px,
+				$gold
+			);
+		}
+		@include media-breakpoint-up(xl) {
+			background-image: linear-gradient(
+				to right,
+				$lightBlue 0%,
+				$lightBlue 60px,
+				$gold 60px,
+				$gold
+			);
+		}
+	}
+}

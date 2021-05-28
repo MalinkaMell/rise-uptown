@@ -1,0 +1,40 @@
+.max-450 {
+	max-height: 450px;
+	overflow: hidden;
+}
+
+.pt-80 {
+	@include padding-top(5rem);
+}
+.mb-80 {
+	@include margin-bottom(5rem);
+}
+.mt-80 {
+	@include margin-top(5rem);
+}
+
+.my-80 {
+	@include margin-top(5rem);
+	@include margin-bottom(5rem);
+}
+
+.py-80 {
+	@include padding-top(5rem);
+	@include padding-bottom(5rem);
+}
+
+.my-60 {
+	@include margin-top(3.75rem);
+	@include margin-bottom(3.75rem);
+}
+
+.py-60 {
+	@include padding-top(3.75rem);
+	@include padding-bottom(3.75rem);
+}
+.pb-60 {
+	@include padding-bottom(3.75rem);
+}
+.pb-80 {
+	@include padding-bottom(5rem);
+}

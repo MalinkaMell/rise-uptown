@@ -1,0 +1,231 @@
+.figure-el {
+	position: relative !important;
+	overflow: hidden !important;
+	display: block !important;
+	margin: 0 !important;
+}
+.figure-img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	margin-bottom: 0;
+}
+.clean-thumb {
+	border: none;
+	padding: 0;
+	border-radius: 0;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #000000;
+	z-index: 0;
+}
+
+.square {
+	&:before {
+		content: '';
+		display: block;
+		padding-top: 100%; /* initial ratio of 1:1*/
+	}
+}
+
+.img-cover {
+	width: 100%;
+	@include rfs(700px, height);
+	object-fit: cover;
+	object-position: left bottom;
+}
+.max-700 {
+	max-height: 225px;
+	@include media-breakpoint-only(lg) {
+		max-height: 430px;
+	}
+	@include media-breakpoint-only(md) {
+		max-height: 460px;
+	}
+	@include media-breakpoint-up(xl) {
+		max-height: 575px;
+	}
+	@include media-breakpoint-up(xxl) {
+		max-height: 700px;
+	}
+}
+.max-750 {
+	max-height: 175px;
+	@include media-breakpoint-up(md) {
+		max-height: 415px;
+	}
+	@include media-breakpoint-up(xl) {
+		max-height: 575px;
+	}
+	@include media-breakpoint-up(xxl) {
+		max-height: 750px;
+	}
+}
+.max-850 {
+	max-height: 175px;
+	@include media-breakpoint-up(md) {
+		max-height: 415px;
+	}
+	@include media-breakpoint-up(xl) {
+		max-height: 575px;
+	}
+	@include media-breakpoint-up(xxl) {
+		max-height: 850px;
+	}
+}
+.img-full {
+	@include media-breakpoint-up(md) {
+		width: 100%;
+		min-height: auto;
+		display: block;
+		// object-fit: cover;
+	}
+}
+.img-half {
+	@include media-breakpoint-up(md) {
+		width: 100%;
+		min-height: auto;
+		max-height: 50%;
+		display: block;
+		// object-fit: cover;
+	}
+}
+.img-all {
+	@include media-breakpoint-up(md) {
+		max-width: 100%;
+		max-height: 100%;
+		object-fit: cover;
+	}
+}
+.img-all-50 {
+	@include media-breakpoint-up(md) {
+		width: 100%;
+		max-height: 50%;
+		object-fit: cover;
+	}
+}
+.img-50 {
+	@include media-breakpoint-up(md) {
+		width: 50%;
+		max-height: 50%;
+		object-fit: cover;
+	}
+}
+.img-100 {
+	@include media-breakpoint-up(md) {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+
+
+.blink_me {
+	animation: blinker 0.3s linear;
+	animation-iteration-count: 2;
+}
+
+.blink_slow {
+	animation: blinker_slow 0.7s infinite;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+	80% {
+		opacity: 0.5;
+	}
+}
+
+@keyframes blinker_slow {
+	25% {
+		opacity: 0.3;
+	}
+	50% {
+		opacity: 0.6;
+	}
+	75% {
+		opacity: 0.9;
+	}
+}
+
+.wave-up {
+	animation: wave-up 2s linear infinite;
+}
+.wave-down {
+	animation: wave-down 2s linear infinite;
+}
+.wave-left {
+	animation: wave-left 2s linear infinite;
+}
+.wave-right {
+	animation: wave-right 2s linear infinite;
+}
+@keyframes wave-up {
+	0% {
+		transform: rotateX(45deg);
+	}
+	100% {
+		transform: rotateX(-45deg);
+	}
+}
+
+@keyframes wave-down {
+	0% {
+		transform: rotateX(-45deg);
+	}
+	100% {
+		transform: rotateX(45deg);
+	}
+}
+@keyframes wave-up {
+	0% {
+		transform: rotateX(45deg);
+	}
+	100% {
+		transform: rotateX(-45deg);
+	}
+}
+@keyframes wave-left {
+	0% {
+		transform: rotateY(45deg);
+	}
+	100% {
+		transform: rotateY(-45deg);
+	}
+}
+@keyframes wave-right {
+	0% {
+		transform: rotateY(-45deg);
+	}
+	100% {
+		transform: rotateY(45deg);
+	}
+}
+.rotate-down {
+	animation: spin-down 100s linear infinite;
+}
+.rotate-up {
+	animation: spin-up 100s linear infinite;
+}
+
+@keyframes spin-up {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes spin-down {
+	100% {
+		transform: rotate(-360deg);
+	}
+}
